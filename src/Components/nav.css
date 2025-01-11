@@ -1,0 +1,42 @@
+.nav,.menu {
+    cursor: url('/cursor.png') 16 16, pointer; 
+}
+.white{
+    cursor: url('/white.png') 16 16, pointer; 
+}
+.video {
+    width: 100%;
+    aspect-ratio: 13/14; 
+    object-fit: cover; 
+    opacity: 1;
+    transition: opacity  0.3s ease-in-out;
+    
+
+}
+
+.hide{
+    opacity: 0;
+    
+}
+
+@media (max-width: 1384px) { 
+    .video {
+        aspect-ratio: 13 / 17; 
+    }
+}
+@media (max-width: 1141px) { 
+    .video {
+        aspect-ratio: 13 / 20; 
+    }
+}
+@media (max-width: 976px) { 
+    .video {
+        aspect-ratio: 13 / 24; 
+    }
+}
+
+@media (max-width: 809px) { 
+    .video {
+        aspect-ratio: 13 / 26;
+    }
+}

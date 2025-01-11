@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.unkempt-regular {
+    font-family: "Unkempt", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .unkempt-bold {
+    font-family: "Unkempt", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .fascinate-inline-regular {
+    font-family: "Fascinate Inline", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
