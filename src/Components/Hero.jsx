@@ -1,7 +1,7 @@
 import React, { useEffect, useState ,useRef } from 'react'
 import NavBar from './NavBar'
 import "./hero.css"
-
+import FeatureWork from './FeatureWork'
 
 const Hero = () => {
   const divRef = useRef(null);
@@ -77,8 +77,9 @@ const Hero = () => {
   <div className="h-screen w-full flex justify-center items-center text-3xl"></div>
 </div>
  
-<div className='bg-[#dddee4] h-[45%] w-full flex flex-col gap-2 justify-center  dm-serif-text-regular text-3xl md:text-5xl lg:7xl px-10'><p className='bg-slate-50 shadow-2xl rounded-br-3xl px-2'>MAHESHWARI FILMS IS A  FILMS PRODUCTION COMPANY BORN TO TELL STORIES THAT MOVE PEOPLE.</p>
-<div className='text-end  h-[90px] '><button  className="white  relative overflow-hidden h-[30px] w-[70px]  md:h-[30px] md:w-[100px] duration-75 md:hover:border-b-4 md:border-dashed border-white text-lg md:text-xl   unkempt-bold  group">
+<div className='bg-[#dddee4] h-[45%] w-full flex flex-col gap-2 py-10 justify-center  dm-serif-text-regular text-3xl md:text-5xl lg:7xl px-10'>
+  <p className='bg-slate-50 shadow-2xl rounded-br-3xl px-2'>MAHESHWARI FILMS IS A  FILMS PRODUCTION COMPANY BORN TO TELL STORIES THAT MOVE PEOPLE.</p>
+<div className='text-end  h-[90px] '><button  className="white  relative overflow-hidden h-[30px] w-[70px]  md:h-[30px] md:w-[100px] duration-75 md:hover:border-b-4 md:border-dashed border-black text-lg md:text-xl   unkempt-bold  group">
          
          <div class="absolute bottom-1 md:bottom-0 left-0 w-full text-center transform transition-all duration-500 ease-in-out group-hover:translate-y-[-100%] ">
           MOre.
@@ -92,7 +93,7 @@ const Hero = () => {
        <div ref={divRef} className={`h-[2px] bg-black expandable-div ${inView?'expanded':''}`}></div>
        </div>
  
-    <div className='h-screen w-full bg-white '>hsdlakhdkasl</div>
+       <FeatureWork/>
     </>
    
   )

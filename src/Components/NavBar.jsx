@@ -118,7 +118,7 @@ function handleMouseLeave()
     
     :
     
-      ( <div className='nav bg-slate-200 h-full w-full flex px-4 md:px-8 md:justify-end justify-between items-center'>
+      ( <div className='nav bg-[#dddee4] h-full w-full flex px-4 md:px-8 md:justify-end justify-between items-center'>
 
         <p className='unkempt-bold md:hidden block'>MAHESHWARI FILMS</p>
         <button onClick={()=>{setShow(!show);}} className="menu relative overflow-hidden h-[30px] w-[70px] md:h-[30px] md:w-[100px] duration-75 md:hover:border-b-4 md:border-dashed border-black md:text-2xl   unkempt-bold  group">
