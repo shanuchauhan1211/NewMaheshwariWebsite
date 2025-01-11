@@ -2,7 +2,7 @@ import React from 'react'
 
 const Connet = () => {
   return (
-    <div className='bg-white'>Connet</div>
+    <div className='bg-white h-screen z-10'>Connet</div>
   )
 }
 
