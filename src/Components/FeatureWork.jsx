@@ -5,10 +5,11 @@ import 'aos/dist/aos.css';
 const FeatureWork = () => {
   const divRef1 = useRef(null); // Reference for the first div
   const divRef2 = useRef(null); // Reference for the second div
+  const divRef3 = useRef(null);
 
   const [inView1, setInView1] = useState(false); // State for the first div
   const [inView2, setInView2] = useState(false); // State for the second div
-
+  const [inView3, setInView3] = useState(false);
   // Intersection Observer for the first div
   useEffect(() => {
     const observer1 = new IntersectionObserver(
@@ -51,6 +52,27 @@ const FeatureWork = () => {
     };
   }, []);
 
+
+  useEffect(() => {
+    const observer3 = new IntersectionObserver(
+      ([entry]) => {
+        setInView3(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Trigger when 10% of the div is in view
+    );
+
+    const currentDiv3 = divRef3.current;
+    if (currentDiv3) {
+      observer3.observe(currentDiv3);
+    }
+
+    return () => {
+      if (currentDiv3) {
+        observer3.unobserve(currentDiv3);
+      }
+    };
+  }, []);
+
   // AOS Initialization
   useEffect(() => {
     AOS.init({
@@ -78,13 +100,13 @@ const FeatureWork = () => {
             <div className="flex justify-center h-full w-full">
               <div
                 ref={divRef1}
-                className={`bg-black newexpandable-div mt-[10%] hidden md:block ${
+                className={`bg-[#9e9e9e] newexpandable-div mt-[10%] hidden md:block ${
                   inView1 ? 'expandedheight' : ''
                 }`}
               ></div>
               <div
                 ref={divRef1}
-                className={`bg-black expandable-div mt-[25%] ${
+                className={`bg-[#9e9e9e] expandable-div mt-[25%] ${
                   inView1 ? 'newexpanded' : ''
                 }`}
               ></div>
@@ -130,13 +152,13 @@ const FeatureWork = () => {
            
               <div
                 ref={divRef2}
-                className={`bg-black newexpandable-div mt-[10%] hidden md:block ${
+                className={`bg-[#cacad3] newexpandable-div mt-[10%] hidden md:block ${
                   inView2 ? 'expandedheight' : ''
                 }`}
               ></div>
             <div
                 ref={divRef2}
-                className={`bg-black expandable-div mt-[25%] ${
+                className={`bg-[#cacad3] expandable-div mt-[25%] ${
                   inView2 ? 'newexpanded' : ''
                 }`}
               ></div>  
@@ -145,10 +167,48 @@ const FeatureWork = () => {
         </div>
 
         {/* Sticky Section 3 */}
-        <div className="h-[80vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-40 z-10 w-full rounded-t-2xl bg-[#8b8b8f]"></div>
+        <div className="h-[80vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-40 z-10 w-full py-10 rounded-t-2xl md:flex gap-2 md:gap-4 dm-serif-text-regular px-10 bg-[#8b8b8f]">
+        <div className="md:w-1/2">
+            <p
+              data-aos="fade-up"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+            >
+              "Welcome to Maheshwari Films, where storytelling meets innovation!
+              We are a passionate filmmaking company dedicated to creating
+              visually stunning, emotionally compelling, and unforgettable
+              cinematic experiences."
+            </p>
+            <div className="flex justify-center h-full w-full">
+              <div
+                ref={divRef3}
+                className={`bg-[#b3afaf] newexpandable-div mt-[10%] hidden md:block ${
+                  inView3 ? 'expandedheight' : ''
+                }`}
+              ></div>
+              <div
+                ref={divRef3}
+                className={`bg-[#b3afaf] expandable-div mt-[25%] ${
+                  inView3 ? 'newexpanded' : ''
+                }`}
+              ></div>
+            </div>
+          </div>
+          <div className="md:w-1/2 mt-[15%]">
+            <p
+              data-aos="fade-up"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+            >
+              From concept to the final cut, we bring stories to life with
+              artistry, precision, and a touch of magic. We transform ideas into
+              captivating visual narratives. At the heart of our work is a
+              commitment to excellence and a vision to redefine the art of
+              filmmaking.
+            </p>
+          </div>
+        </div>
 
         {/* Non-sticky Content */}
-        <div className="relative z-20">
+        <div className="relative z-20 h-screen shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-[#777779]">
           <p>ihjwdjadsklasdlk</p>
         </div>
       </div>

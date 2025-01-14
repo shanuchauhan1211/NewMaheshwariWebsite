@@ -18,7 +18,7 @@
   .expandable-div {
     width: 10px; /* Initial width */
     height: 1px;
-    background-color: black;
+    
     border-radius: 5px;
     transition: width 1.5s ease-in-out; /* Smooth transition */
   }
@@ -35,7 +35,7 @@
   .newexpandable-div {
     width: 2px; /* Initial width */
     height: 10px;
-    background-color: black;
+   
     border-radius: 5px;
     transition: height 1.5s ease-in-out; /* Smooth transition */
   }
