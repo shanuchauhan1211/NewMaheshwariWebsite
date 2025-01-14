@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import "./hero.css"
 import FeatureWork from './FeatureWork'
 
+
 const Hero = () => {
   const divRef = useRef(null);
   const [inView, setInView] = useState(false);
@@ -30,11 +31,16 @@ const Hero = () => {
     };
   }, []);
 
+
+
+
+
+
   return (
     <>
      <div className=' h-screen w-full '>
-       <div className=' h-[8%] w-full'><NavBar /></div>
-       <div className=' h-[92%]  w-full bg-[#dddee4] flex flex-col justify-center items-center'>
+       <div className=' h-[8%] w-full shadow-xl'><NavBar /></div>
+       <div className=' h-[92%]  w-full bg-[#c7c8cc] flex flex-col justify-center items-center'>
 
 <div className=' flex flex-col h-[94%] items-center justify-center dm-serif-text-regular lg:text-8xl md:text-6xl text-3xl'>
 <div className='flex gap-2  '>
@@ -77,7 +83,7 @@ const Hero = () => {
   <div className="h-screen w-full flex justify-center items-center text-3xl"></div>
 </div>
  
-<div className='bg-[#dddee4] h-[45%] w-full flex flex-col gap-2 py-10 justify-center  dm-serif-text-regular text-3xl md:text-5xl lg:7xl px-10'>
+<div className='bg-[#c7c8cc] h-[45%] w-full flex flex-col gap-2 py-10 justify-center  dm-serif-text-regular text-3xl md:text-5xl lg:7xl px-10'>
   <p className='bg-slate-50 shadow-2xl rounded-br-3xl px-2'>MAHESHWARI FILMS IS A  FILMS PRODUCTION COMPANY BORN TO TELL STORIES THAT MOVE PEOPLE.</p>
 <div className='text-end  h-[90px] '><button  className="white  relative overflow-hidden h-[30px] w-[70px]  md:h-[30px] md:w-[100px] duration-75 md:hover:border-b-4 md:border-dashed border-black text-lg md:text-xl   unkempt-bold  group">
          
@@ -93,7 +99,7 @@ const Hero = () => {
        <div ref={divRef} className={`h-[2px] bg-black expandable-div ${inView?'expanded':''}`}></div>
        </div>
  
-       <FeatureWork/>
+       <FeatureWork/> 
     </>
    
   )

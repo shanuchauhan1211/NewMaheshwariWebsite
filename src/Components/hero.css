@@ -27,3 +27,19 @@
     width: 100%; /* Final width when in view */
   }
 
+  .expandable-div.newexpanded {
+    width: 20%; /* Final width when in view */
+  }
+
+  
+  .newexpandable-div {
+    width: 2px; /* Initial width */
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    transition: height 1.5s ease-in-out; /* Smooth transition */
+  }
+
+.newexpandable-div.expandedheight{
+  height: 70%;
+}
