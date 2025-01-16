@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./hero.css"
+
 const YouTubeChannel = () => {
   const [videos, setVideos] = useState([]);
   const divRef = useRef(null);
-  const API_KEY = "AIzaSyDBfq8-dM8DeGfxU-jtwpQrr6EZQJRNijs"; // Replace with your API Key
-  const CHANNEL_ID = "UCR0mYovQhM660XhCN8ZvtQw";   // Replace with your Channel ID
+  const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+  const CHANNEL_ID = import.meta.env.VITE_CHANNEL_ID;
+  
   const MAX_RESULTS = 10;                // Number of videos to fetch
 
   useEffect(() => {
@@ -14,8 +16,8 @@ const YouTubeChannel = () => {
         const response = await axios.get(
           `https://www.googleapis.com/youtube/v3/search`, {
             params: {
-              key: API_KEY,
-              channelId: CHANNEL_ID,
+              key: process.env.API_KEY,
+              channelId: process.env.CHANNEL_ID,
               part: "snippet",
               order: "date",
               maxResults: MAX_RESULTS,
