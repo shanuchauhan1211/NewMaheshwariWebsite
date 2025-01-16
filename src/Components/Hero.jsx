@@ -2,8 +2,6 @@ import React, { useEffect, useState ,useRef } from 'react'
 import NavBar from './NavBar'
 import "./hero.css"
 import FeatureWork from './FeatureWork'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Hero = () => {
   const divRef = useRef(null);
@@ -33,14 +31,6 @@ const Hero = () => {
   }, []);
 
 
-useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duration of the animation
-      easing: 'ease-in-out', // Easing function for the animation
-      once: true, // Whether animation should happen only once
-    });
-  }, []);
-
 
 
   return (
@@ -50,7 +40,7 @@ useEffect(() => {
        <div className=' h-[92%]  w-full bg-[#c7c8cc] flex flex-col justify-center items-center'>
 
 <div className=' flex flex-col h-[94%] items-center justify-center dm-serif-text-regular lg:text-8xl md:text-6xl text-3xl'>
-<div  data-aos="fade-up" className='flex gap-2  '>
+<div className='flex gap-2  '>
   <p className=' inline-block  transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105'>M</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>A</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>H</p>
@@ -62,8 +52,8 @@ useEffect(() => {
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>R</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>I</p>
 </div>
-<img  data-aos="zoom-in" className='md:h-[300px] md:w-[300px] h-[250px] w-[250px]' src="./LOGO.png" alt="" />
-<div  data-aos="fade-up" className='flex gap-2  '>
+<img   className='md:h-[300px] md:w-[300px] h-[250px] w-[250px]' src="./LOGO.png" alt="" />
+<div  className='flex gap-2  '>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>F</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>I</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>L</p>

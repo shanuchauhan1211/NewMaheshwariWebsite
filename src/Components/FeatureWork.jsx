@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import YouTubeChannel from './YoutubeChannel';
 
 const FeatureWork = () => {
   const divRef1 = useRef(null); // Reference for the first div
@@ -83,7 +84,7 @@ const FeatureWork = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full bg-[#c7c8cc]">
+    <div id='about' className="h-screen w-full bg-[#c7c8cc]">
       <div className="w-full bg-[#c7c8cc]">
         {/* Sticky Section 1 */}
         <div className="h-[70vh] sticky top-0 z-10 w-full rounded-t-2xl md:flex gap-2 md:gap-4 dm-serif-text-regular px-10">
@@ -208,8 +209,8 @@ const FeatureWork = () => {
         </div>
 
         {/* Non-sticky Content */}
-        <div className="relative z-20 h-screen shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-[#777779]">
-          <p>ihjwdjadsklasdlk</p>
+        <div className="relative z-20  shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-[#777779]">
+          <YouTubeChannel/>
         </div>
       </div>
     </div>

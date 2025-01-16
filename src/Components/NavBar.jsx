@@ -72,12 +72,12 @@ function handleMouseLeave()
 
 </div>
 <div className='h-[92%]   fascinate-inline-regular  text-white inline-flex flex-col px-4 lg:text-7xl md:text-5xl text-4xl justify-center'>
-    <motion.span   onMouseEnter={() => handleMouseEnter("./MF_Logo.mp4")} onMouseLeave={handleMouseLeave}
-     className='hover:opacity-70  '>WORK</motion.span>
-    <motion.span    onMouseEnter={() => handleMouseEnter("./Logo.mp4")} onMouseLeave={handleMouseLeave}
-     className='hover:opacity-70 '>ABOUT</motion.span>
-    <motion.span    onMouseEnter={() => handleMouseEnter("./MF_Logo.mp4")} onMouseLeave={handleMouseLeave}
-     className='hover:opacity-70  '>CONTACT</motion.span>
+   <a href="#work"> <motion.span onClick={()=>{setShow(!show);}}   onMouseEnter={() => handleMouseEnter("./MF_Logo.mp4")} onMouseLeave={handleMouseLeave}
+     className='hover:opacity-70  '>WORK</motion.span></a>
+  <a href="#about">  <motion.span onClick={()=>{setShow(!show);}}   onMouseEnter={() => handleMouseEnter("./Logo.mp4")} onMouseLeave={handleMouseLeave}
+     className='hover:opacity-70 '>ABOUT</motion.span></a> 
+  <a href="#contact">   <motion.span onClick={()=>{setShow(!show);}}   onMouseEnter={() => handleMouseEnter("./MF_Logo.mp4")} onMouseLeave={handleMouseLeave}
+     className='hover:opacity-70  '>CONTACT</motion.span></a> 
 
 </div>
 
