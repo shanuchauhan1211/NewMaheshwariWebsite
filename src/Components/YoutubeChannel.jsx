@@ -16,8 +16,8 @@ const YouTubeChannel = () => {
         const response = await axios.get(
           `https://www.googleapis.com/youtube/v3/search`, {
             params: {
-              key: process.env.API_KEY,
-              channelId: process.env.CHANNEL_ID,
+              key: API_KEY,
+              channelId: CHANNEL_ID,
               part: "snippet",
               order: "date",
               maxResults: MAX_RESULTS,
