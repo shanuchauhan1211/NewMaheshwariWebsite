@@ -8,6 +8,7 @@ const InfiniteCarousel = () => {
         { name: "Slide 2", url: "", description: "some2" },
         { name: "Slide 3", url: "", description: "some3" },
         { name: "Slide 4", url: "", description: "some4" },
+        
     ];
 
     const initial = {
@@ -94,7 +95,7 @@ const InfiniteCarousel = () => {
     return (
         <div className=" h-full w-full overflow-hidden flex flex-col justify-around items-center dm-serif-text-regular ">
             <div className="w-full px-10">
-                <p className="text-2xl md:text-4xl lg:text-7xl text-white">Gallery</p>
+                <p className="text-2xl md:text-4xl lg:text-7xl text-white">Upcoming</p>
                 <div
                     ref={divRef}
                     className={`h-[2px] bg-white mt-2 expandable-div ${

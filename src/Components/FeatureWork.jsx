@@ -175,10 +175,7 @@ const FeatureWork = () => {
               data-aos="fade-up"
               className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
             >
-              "Welcome to Maheshwari Films, where storytelling meets innovation!
-              We are a passionate filmmaking company dedicated to creating
-              visually stunning, emotionally compelling, and unforgettable
-              cinematic experiences."
+              Our journey has been about more than just numbers; it’s about the emotions, connections, and memories we've created together. Every project has been a masterpiece woven with passion, and every milestone is a testament to the trust and support of our collaborators, audience, and team.
             </p>
             <div className="flex justify-center h-full w-full">
               <div
@@ -200,11 +197,9 @@ const FeatureWork = () => {
               data-aos="fade-up"
               className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
             >
-              From concept to the final cut, we bring stories to life with
-              artistry, precision, and a touch of magic. We transform ideas into
-              captivating visual narratives. At the heart of our work is a
-              commitment to excellence and a vision to redefine the art of
-              filmmaking.
+             Here’s to more groundbreaking stories, more unforgettable moments, and a future filled with magic!
+
+✨ Maheshwari Films – Where Stories Shine Bright for 32 Years and Counting ✨
             </p>
           </div>
         </div>
