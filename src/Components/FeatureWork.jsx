@@ -210,8 +210,8 @@ const FeatureWork = () => {
           <YouTubeChannel/>
           <div  className="relative z-20 h-screen w-full ">
          <InfiniteCarousel/>
-         <Gallery/>
         </div>
+        <div className="relative z-20"><Gallery/></div>
         </div>
        
       
