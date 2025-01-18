@@ -143,8 +143,8 @@ timeline1.fromTo(boxref6.current,{
 
   return (
     <>
-      <div ref={mainRef} className='h-screen w-full overflow-hidden bg-stone-800 flex flex-col justify-center items-center'>
-      <p ref={textref} className="text-7xl font-bold relative top-[200px]"> Gallery </p>
+      <div ref={mainRef} className='h-screen w-full overflow-hidden dm-serif-text-regular bg-stone-800 flex flex-col justify-center items-center'>
+      <p ref={textref} className="lg:text-7xl md:text-4xl text-xl  text-[#cac2c2] h-[100px]  relative top-[200px]"> Gallery </p>
         <div className='h-[400px]  w-full z-10 flex justify-center items-center gap-10'>
           <div ref={boxRef} className="h-[200px] w-[150px] relative -top-8 left-[70px]  z-10 shadow-md bg-pink-600"></div>
           <div ref={boxref2} className="h-[200px] w-[150px] relative top-[90px] left-[10px]  shadow-md bg-pink-800"></div>
