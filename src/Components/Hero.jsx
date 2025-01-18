@@ -37,7 +37,7 @@ const Hero = () => {
     <>
      <div className=' h-screen w-full '>
        <div className=' h-[8%] w-full shadow-xl'><NavBar /></div>
-       <div className=' h-[92%]  w-full bg-[#c7c8cc] flex flex-col justify-center items-center'>
+       <div className=' h-[92%]  w-full bg-gradient-to-b from-stone-400 to-stone-800 flex flex-col justify-center items-center'>
 
 <div className=' flex flex-col h-[94%] items-center justify-center dm-serif-text-regular lg:text-8xl md:text-6xl text-3xl'>
 <div className='flex gap-2  '>
@@ -96,7 +96,7 @@ const Hero = () => {
        <div ref={divRef} className={`h-[2px] bg-black expandable-div ${inView?'expanded':''}`}></div>
        </div>
  
-       <FeatureWork/> 
+       {/* <FeatureWork/>  */}
     </>
    
   )

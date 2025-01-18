@@ -8,7 +8,7 @@ const YouTubeChannel = () => {
   const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
   const CHANNEL_ID = import.meta.env.VITE_CHANNEL_ID;
   
-  const MAX_RESULTS = 10;                // Number of videos to fetch
+  const MAX_RESULTS = 10;                
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -64,15 +64,15 @@ const [inView, setInView] = useState(false);
 
 
   return (
-    <div className="p-10 flex flex-col gap-10 dm-serif-text-regular" >
-   <div> <p className=" text-md md:text-4xl lg:text-7xl">WORK</p>  <div ref={divRef} className={`h-[2px] bg-black expandable-div mt-1 ${inView?'expanded':''}`}></div></div>   
+    <div className="p-10 flex flex-col gap-10 dm-serif-text-regular text-[#ece6e6]" >
+   <div> <p className=" text-md md:text-4xl lg:text-7xl">WORK</p>  <div ref={divRef} className={`h-[2px] bg-white expandable-div mt-1 ${inView?'expanded':''}`}></div></div>   
       <div className="flex flex-wrap justify-evenly gap-1" >
         {videos.map((video,index) => (
           video.id.videoId && ( // Check if videoId exists
             <div  key={video.id.videoId}>
-                 <p className="mb-5"> {index+1} {video.snippet.title}</p>
+                 <p className="mb-5"> {index+1}. {video.snippet.title}</p>
                  
-              <iframe className={`h-[200px] w-[240px] md:w-[380px] ${index+1==1?'h-[300px] md:w-[400px]':''} `}
+              <iframe className={`h-[200px] w-[240px] md:w-[380px] ${index+1==1||index+1==6?'md:h-[400px] md:w-[500px]':''} `}
                
                 src={`https://www.youtube.com/embed/${video.id.videoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${video.id.videoId}`}
                 title={video.snippet.title}

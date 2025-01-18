@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import YouTubeChannel from './YoutubeChannel';
+import InfiniteCarousel from './InfiniteCarousel';
 
 const FeatureWork = () => {
   const divRef1 = useRef(null); // Reference for the first div
@@ -209,9 +210,14 @@ const FeatureWork = () => {
         </div>
 
         {/* Non-sticky Content */}
-        <div className="relative z-20  shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-[#777779]">
+        <div id='work' className="relative z-20   shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-gradient-to-b from-stone-400 to-stone-800">
           <YouTubeChannel/>
+          <div  className="relative z-20 h-screen w-full ">
+         <InfiniteCarousel/>
         </div>
+        </div>
+       
+      
       </div>
     </div>
   );
