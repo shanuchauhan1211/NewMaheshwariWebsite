@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import YouTubeChannel from './YoutubeChannel';
 import InfiniteCarousel from './InfiniteCarousel';
+import Gallery from './Gallery';
 
 const FeatureWork = () => {
   const divRef1 = useRef(null); // Reference for the first div
@@ -209,6 +210,7 @@ const FeatureWork = () => {
           <YouTubeChannel/>
           <div  className="relative z-20 h-screen w-full ">
          <InfiniteCarousel/>
+         <Gallery/>
         </div>
         </div>
        
