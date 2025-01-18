@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import './Infinite.css';
+import './infinite.css';
 
 const InfiniteCarousel = () => {
     const data = [
