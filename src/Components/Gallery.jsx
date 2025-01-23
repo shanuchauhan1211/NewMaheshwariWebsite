@@ -121,15 +121,16 @@ export default function Gallery() {
         {/* Mobile and Medium Screens */}
         <div className="h-[800px]  w-full mt-[30%] md:mt-[15%] xl:hidden z-10">
           <Swiper spaceBetween={18} slidesPerView={1.5} centeredSlides>
-            {images.map((image) => (
+            {images.map((image,index) => (
               <SwiperSlide key={image.id}>
-                <div className="h-[50vh] w-[60vw] mx-auto">
-                <div className="h-[50vh] w-[50vw] mx-auto">     <img
+      
+                <div  key={image.id}
+                  ref={(el) => (imageRefs.current[index] = el)} className="h-[50vh] w-[60vw] mx-auto">     <img
                     className="object-contain h-full w-full rounded-lg hover:scale-125 duration-200 "
                     src={image.src}
                     alt={image.alt}
                   />
-                  </div>
+                  
                 </div>
               </SwiperSlide>
             ))}
