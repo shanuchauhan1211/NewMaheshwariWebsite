@@ -31,7 +31,7 @@ const [inView, setInView] = useState(false);
   return (
     <div className='md:h-[90vh] h-[70vh] md:px-10 px-2 dm-serif-text-regular w-full'>
         <div
-        className='md:h-[60%] h-[40%] w-full flex flex-col  md:gap-8 gap-2 text-white py-4 '>
+        className='md:h-[60%] h-[50%] w-full flex flex-col  md:gap-8 gap-2 text-white py-4 '>
             <p>Get in Touch</p>
             <div className='flex lg:text-6xl md:text-4xl text-lg gap-2'>
             <a href="tel:+918006670570"> <div className='flex  '>
