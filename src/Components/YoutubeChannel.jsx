@@ -64,7 +64,7 @@ const [inView, setInView] = useState(false);
 
 
   return (
-    <div className="p-10 flex flex-col gap-10 dm-serif-text-regular text-[#ece6e6]" >
+    <div id="work" className="p-10 flex flex-col gap-10 dm-serif-text-regular text-[#ece6e6]" >
    <div> <p className=" text-md md:text-4xl lg:text-7xl text-[#cac2c2] ">WORK</p>  <div ref={divRef} className={`h-[2px] bg-white expandable-div mt-1 ${inView?'expanded':''}`}></div></div>   
       <div className="flex flex-wrap justify-evenly gap-1" >
         {videos.map((video,index) => (

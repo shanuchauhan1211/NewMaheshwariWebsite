@@ -207,7 +207,7 @@ const FeatureWork = () => {
         </div>
 
         {/* Non-sticky Content */}
-        <div id='work' className="relative z-20   shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-gradient-to-b from-stone-400 to-stone-800">
+        <div  className="relative z-20   shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-gradient-to-b from-stone-400 to-stone-800">
           <Gallery/>
           <YouTubeChannel/>
           <div  className="relative z-20 h-screen w-full ">
