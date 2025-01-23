@@ -35,7 +35,7 @@ const Hero = () => {
 
   return (
     <>
-     <div className=' h-screen w-full '>
+     <div id='home' className=' h-screen w-full '>
        <div className=' h-[8%] w-full shadow-xl'><NavBar /></div>
        <div className=' h-[92%]  w-full bg-gradient-to-b from-stone-400 to-stone-800 flex flex-col justify-center items-center'>
 
