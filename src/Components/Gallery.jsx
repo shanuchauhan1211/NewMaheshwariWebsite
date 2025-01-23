@@ -50,7 +50,6 @@ export default function Gallery() {
         "<=0"
       );
 
-      // Animate all images
       images.forEach((_, index) => {
         timeline1.fromTo(
           imageRefs.current[index],
@@ -85,48 +84,53 @@ export default function Gallery() {
     <>
       <div
         ref={mainRef}
-        className="h-1/2 md:h-screen w-full overflow-hidden dm-serif-text-regular flex flex-col justify-center items-center"
+        className="h-screen w-full overflow-hidden dm-serif-text-regular flex flex-col justify-center items-center"
       >
         <p
           ref={textref}
-          className="lg:text-7xl md:text-4xl text-xl text-[#cac2c2] h-[100px] relative xl:top-[200px]  top-[40px]"
+          className="lg:text-7xl md:text-4xl text-xl text-[#cac2c2] h-[100px] relative xl:top-[200px] top-[80px]"
         >
           Gallery
         </p>
 
         {/* Desktop View */}
         <div className="h-[400px] hidden xl:flex w-full z-10 justify-center items-center gap-10">
-        <Swiper spaceBetween={20} slidesPerView={4} centeredSlides>  {images.map((image, index) => (
-          <SwiperSlide key={image.id}> <div
-              key={image.id}
-              ref={(el) => (imageRefs.current[index] = el)}
-              className={`lg:h-[${index % 2 === 0 ? "300px" : "200px"}] lg:w-[${
-                index % 2 === 0 ? "300px" : "350px"
-              }] relative ${
-                index % 2 === 0 ? "top-[60px]" : "top-[80px]"
-              } shadow-md`}
-            >
-              <img
-                className="object-cover  hover:scale-125 duration-200  h-full w-full"
-                src={image.src}
-                alt={image.alt}
-              />
-            </div>
-            </SwiperSlide> 
-          ))}
+          <Swiper spaceBetween={20} slidesPerView={4} centeredSlides>
+            {images.map((image, index) => (
+              <SwiperSlide key={image.id}>
+                <div
+                  key={image.id}
+                  ref={(el) => (imageRefs.current[index] = el)}
+                  className={`lg:h-[${index % 2 === 0 ? "300px" : "200px"}] lg:w-[${
+                    index % 2 === 0 ? "300px" : "350px"
+                  }] relative ${
+                    index % 2 === 0 ? "top-[60px]" : "top-[80px]"
+                  } shadow-md`}
+                >
+                  <img
+                    className="object-cover hover:scale-125 duration-200 h-full w-full"
+                    src={image.src}
+                    alt={image.alt}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
 
         {/* Mobile and Medium Screens */}
-        <div className="h-[400px] xl:hidden w-full z-10">
-          <Swiper spaceBetween={20} slidesPerView={3} centeredSlides>
+        <div className="h-[800px]  w-full mt-[30%] md:mt-[15%] xl:hidden z-10">
+          <Swiper spaceBetween={18} slidesPerView={1.5} centeredSlides>
             {images.map((image) => (
               <SwiperSlide key={image.id}>
-                <img
-                  className="object-cover object-center h-full w-full rounded-md shadow-md"
-                  src={image.src}
-                  alt={image.alt}
-                />
+                <div className="h-[50vh] w-[60vw] mx-auto">
+                <div className="h-[50vh] w-[50vw] mx-auto">     <img
+                    className="object-contain h-full w-full rounded-lg hover:scale-125 duration-200 "
+                    src={image.src}
+                    alt={image.alt}
+                  />
+                  </div>
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
