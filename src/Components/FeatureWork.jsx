@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import YouTubeChannel from './YoutubeChannel';
 import InfiniteCarousel from './InfiniteCarousel';
 import Gallery from './Gallery';
+import Contact from './Contact';
 
 const FeatureWork = () => {
   const divRef1 = useRef(null); // Reference for the first div
@@ -93,7 +94,7 @@ const FeatureWork = () => {
           <div className="md:w-1/2">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-lg xl:text-3xl px-2"
             >
               "Welcome to Maheshwari Films, where storytelling meets innovation!
               We are a passionate filmmaking company dedicated to creating
@@ -118,7 +119,7 @@ const FeatureWork = () => {
           <div className="md:w-1/2 mt-[15%]">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-lg xl:text-3xl px-2"
             >
               From concept to the final cut, we bring stories to life with
               artistry, precision, and a touch of magic. We transform ideas into
@@ -130,11 +131,11 @@ const FeatureWork = () => {
         </div>
 
         {/* Sticky Section 2 */}
-        <div className="h-[75vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-20 z-10 mt-14 lg:mt-2 w-full rounded-t-2xl bg-[#b1b1b6] flex flex-col-reverse md:flex-row gap-0 md:gap-4 dm-serif-text-regular px-10 py-12">
+        <div className="lg:h-[75vh] md:h-[100vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-20 z-10 mt-14 lg:mt-2 w-full rounded-t-2xl bg-[#b1b1b6] flex flex-col-reverse md:flex-row gap-0 md:gap-4 dm-serif-text-regular px-10 py-12">
           <div className="md:w-1/2 mt-[15%]">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-sm md:text-2xl xl:text-3xl px-2 py-4"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-sm md:text-lg xl:text-3xl px-2 py-4"
             >
               🎬 <strong>Produced 15+ blockbuster feature films</strong>, bringing characters and stories to life that have left an indelible mark on the silver screen.<br/>
 🎵 <strong>Created 100+ soul-stirring songs</strong>, blending music and storytelling to capture hearts and imaginations.<br/>
@@ -144,7 +145,7 @@ const FeatureWork = () => {
           <div className="md:w-1/2">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-lg xl:text-3xl px-2"
             >
               In 1993, Maheshwari Films embarked on a journey fueled by passion,
               creativity, and a belief in the power of storytelling. 32 years of
@@ -170,11 +171,11 @@ const FeatureWork = () => {
         </div>
 
         {/* Sticky Section 3 */}
-        <div className="h-[80vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-40 z-10 w-full py-10 rounded-t-2xl md:flex gap-2 md:gap-4 dm-serif-text-regular px-10 bg-[#8b8b8f]">
+        <div className="lg:h-[80vh] md:h-[100vh] shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] sticky top-40 z-10 w-full py-10 rounded-t-2xl md:flex gap-2 md:gap-4 dm-serif-text-regular px-10 bg-[#8b8b8f]">
         <div className="md:w-1/2">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-lg xl:text-3xl px-2"
             >
               Our journey has been about more than just numbers; it’s about the emotions, connections, and memories we've created together. Every project has been a masterpiece woven with passion, and every milestone is a testament to the trust and support of our collaborators, audience, and team.
             </p>
@@ -196,7 +197,7 @@ const FeatureWork = () => {
           <div className="md:w-1/2 mt-[15%]">
             <p
               data-aos="fade-up"
-              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-2xl xl:text-3xl px-2"
+              className="bg-slate-50 shadow-2xl rounded-br-3xl text-md md:text-lg xl:text-3xl px-2"
             >
              Here’s to more groundbreaking stories, more unforgettable moments, and a future filled with magic!
 
@@ -207,11 +208,13 @@ const FeatureWork = () => {
 
         {/* Non-sticky Content */}
         <div id='work' className="relative z-20   shadow-[-10px_0_60px_-15px_rgba(0,0,0,0.3)] bg-gradient-to-b from-stone-400 to-stone-800">
+          <Gallery/>
           <YouTubeChannel/>
           <div  className="relative z-20 h-screen w-full ">
          <InfiniteCarousel/>
+         <Contact/>
         </div>
-        <div className="relative z-20"><Gallery/></div>
+       
         </div>
        
       

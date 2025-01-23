@@ -93,7 +93,7 @@ const InfiniteCarousel = () => {
     }, []);
 
     return (
-        <div className=" h-full w-full overflow-hidden flex flex-col justify-around items-center dm-serif-text-regular ">
+        <div className=" h-[100vh] w-full overflow-hidden flex flex-col justify-around items-center dm-serif-text-regular ">
             <div className="w-full px-10">
                 <p className="text-2xl md:text-4xl lg:text-7xl text-[#cac2c2]">Upcoming</p>
                 <div

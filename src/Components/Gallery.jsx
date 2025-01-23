@@ -84,7 +84,7 @@ export default function Gallery() {
         opacity: 1,
         x: '0vh',
         y: '0vh',
-        duration: 0.5,
+        duration: 1,
         rotate:0,
       }, 1); 
 
@@ -102,7 +102,7 @@ export default function Gallery() {
         x: '0vh',
         y: '0vh',
         opacity: 1,
-        duration: 0.5,
+        duration: 1.5,
         rotate:0
       }, 1.3); 
 
@@ -111,7 +111,7 @@ export default function Gallery() {
         x: '0vh',
         y: '0vh',
         opacity: 1,
-        duration: 0.5,
+        duration: 2,
         rotate:0
       }, 1.8); 
      
@@ -143,17 +143,24 @@ timeline1.fromTo(boxref6.current,{
 
   return (
     <>
-      <div ref={mainRef} className='h-screen w-full overflow-hidden dm-serif-text-regular bg-stone-800 flex flex-col justify-center items-center'>
+      <div ref={mainRef} className=' h-screen w-full overflow-hidden dm-serif-text-regular  flex flex-col justify-center items-center'>
       <p ref={textref} className="lg:text-7xl md:text-4xl text-xl  text-[#cac2c2] h-[100px]  relative top-[200px]"> Gallery </p>
         <div className='h-[400px]  w-full z-10 flex justify-center items-center gap-10'>
-          <div ref={boxRef} className="h-[200px] w-[150px] relative -top-8 left-[70px]  z-10 shadow-md bg-pink-600"></div>
-          <div ref={boxref2} className="h-[200px] w-[150px] relative top-[90px] left-[10px]  shadow-md bg-pink-800"></div>
-          <div ref={boxref3} className="h-[200px] w-[150px] relative -left-[50px]  bg-black shadow-lg"></div>
-          <div ref={boxref5} className="h-[200px] w-[150px] relative top-[60px] -left-[40px] z-10  bg-purple-400 shadow-md"></div>
-          <div ref={boxref6} className="h-[200px] w-[150px] relative  -left-[100px]  bg-purple-800 shadow-md"></div>
-          <div ref={boxref4} className="h-[200px] w-[150px] relative top-[80px]  -left-[170px]  bg-blue-400 shadow-md"></div>
+          <div ref={boxRef}  className="lg:h-[300px] lg:w-[250px] md:h-[180px] md:w-[300px] relative -top-8 left-[70px]  z-10 shadow-md "><img className="object-cover h-full w-full " src="./pic1.JPG" alt="" /></div>
+          <div ref={boxref2} className="lg:h-[270px] lg:w-[350px] md:h-[160px] md:w-[500px] relative top-[90px] left-[10px]  shadow-md "><img className="object-cover h-full w-full " src="./pic6.jpeg" alt="" /></div>
+          <div ref={boxref3} className="lg:h-[250px] lg:w-[200px]  md:h-[180px] md:w-[400px] relative -left-[20px]   shadow-lg"><img className="object-cover h-full w-full " src="./pic3.jpeg" alt="" /></div>
+          <div ref={boxref5} className="lg:h-[250px] lg:w-[350px]  md:h-[150px] md:w-[500px] relative top-[60px] -left-[40px] z-10   shadow-md"><img className="object-cover h-full w-full " src="./pic4.jpeg" alt="" /></div>
+          <div ref={boxref6} className="lg:h-[200px] lg:w-[200px]  md:h-[150px] md:w-[500px] relative  -left-[100px]   shadow-md"><img className="object-cover h-full w-full " src="./pic5.jpeg" alt="" /></div>
+          <div ref={boxref4} className="lg:h-[200px] lg:w-[250px]  md:h-[150px] md:w-[400px] relative top-[80px]  -left-[170px]  shadow-md"><img className="object-cover h-full w-full " src="./pic2.jpeg" alt="" /></div>
         </div>
       </div>
     </>
   )
 }
+
+
+
+
+
+
+  

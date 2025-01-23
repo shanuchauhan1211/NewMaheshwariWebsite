@@ -39,7 +39,7 @@ const Hero = () => {
        <div className=' h-[8%] w-full shadow-xl'><NavBar /></div>
        <div className=' h-[92%]  w-full bg-gradient-to-b from-stone-400 to-stone-800 flex flex-col justify-center items-center'>
 
-<div className=' flex flex-col h-[94%] items-center justify-center dm-serif-text-regular lg:text-8xl md:text-6xl text-3xl'>
+<div className=' flex flex-col h-[94%] items-center justify-center dm-serif-text-regular lg:text-8xl  md:text-3xl text-3xl'>
 <div className='flex gap-2  '>
   <p className=' inline-block  transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105'>M</p>
   <p className=' inline-block transition duration-300 md:hover:scale-x-150 md:hover:scale-y-105 '>A</p>
@@ -80,7 +80,7 @@ const Hero = () => {
   <div className="h-screen w-full flex justify-center items-center text-3xl"></div>
 </div>
  
-<div className='bg-[#c7c8cc]  h-[45%] w-full flex flex-col gap-2 py-10 justify-center  dm-serif-text-regular text-3xl md:text-5xl lg:7xl px-10'>
+<div className='bg-[#c7c8cc]  h-[45%] w-full flex flex-col gap-2 py-10 justify-center  dm-serif-text-regular text-3xl md:text-4xl lg:text-7xl px-10'>
   <p className='bg-slate-50 shadow-2xl rounded-br-3xl px-2'>MAHESHWARI FILMS IS A  FILMS PRODUCTION COMPANY BORN TO TELL STORIES THAT MOVE PEOPLE.</p>
 <div className='text-end  h-[90px] '><button  className="white  relative overflow-hidden h-[30px] w-[70px]  md:h-[30px] md:w-[100px] duration-75 md:hover:border-b-4 md:border-dashed border-black text-lg md:text-xl   unkempt-bold  group">
          

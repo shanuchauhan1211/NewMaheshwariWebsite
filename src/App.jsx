@@ -8,7 +8,7 @@ const App = () => {
     <>
     <div className=' '><Hero/></div>
  <div ><FeatureWork/></div>
- 
+
 
     </>
      
