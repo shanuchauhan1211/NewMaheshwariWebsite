@@ -94,7 +94,7 @@ export default function Gallery() {
         </p>
 
         {/* Desktop View */}
-        <div className="h-[400px] hidden xl:flex w-full z-10 justify-center items-center gap-10">
+        {/* <div className="h-[400px] hidden lg:flex w-full z-10 justify-center items-center gap-10">
           <Swiper spaceBetween={20} slidesPerView={4} centeredSlides>
             {images.map((image, index) => (
               <SwiperSlide key={image.id}>
@@ -116,11 +116,20 @@ export default function Gallery() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
 
         {/* Mobile and Medium Screens */}
-        <div className="h-[800px]  w-full mt-[30%] md:mt-[15%] xl:hidden z-10">
-          <Swiper spaceBetween={18} slidesPerView={1.5} centeredSlides>
+        <div className="h-[800px]  w-full mt-[30%] md:mt-[15%] z-10">
+          <Swiper    breakpoints={{
+      640: {
+        slidesPerView: 1.5,
+        spaceBetween:18 // For mobile screens (<= 640px)
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween:20 // For desktop screens (>= 1024px)
+      },
+    }} centeredSlides>
             {images.map((image,index) => (
               <SwiperSlide key={image.id}>
       
